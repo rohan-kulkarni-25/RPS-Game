@@ -1,0 +1,335 @@
+body {
+  background-image: url("../images/mainbg.png");
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  /* background-color: plum; */
+  width: 75%;
+  text-align: center;
+}
+
+.flex-box {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #def4ff;
+  justify-content: space-around;
+  margin-top: 4vmin;
+  border-radius: 5px;
+  height: 40vh;
+}
+
+h1 {
+  color: orangered;
+  font-size: 4em;
+  text-shadow: 2px 1px yellow;
+  margin-bottom: auto;
+}
+
+p {
+  font-size: 1.5em;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.452);
+  margin: auto;
+  margin-top: 1vmin;
+}
+
+img {
+  width: 35vmin;
+  border-radius: 50%;
+  margin: auto;
+}
+
+img:hover {
+  cursor: pointer;
+  width: 41vmin;
+  box-shadow: 2px 2px 10px 10px rgb(116, 190, 255);
+  /* margin: auto; */
+}
+
+div {
+  width: fit-content;
+  /* width: 30%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.nohover img:hover {
+  cursor: pointer;
+  width: 35vmin;
+  box-shadow: 0px 0px 0px 0px rgb(116, 190, 255);
+  /* background-color: black */
+}
+
+.nohover p {
+  font-size: 1.5em;
+  background-color: #def4ff;
+  z-index: 3;
+  color: black;
+  font-weight: 900;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 0px 0px aliceblue;
+  margin: auto;
+  margin-top: 1vmin;
+}
+
+.msg p {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #def4ff;
+  padding: 1vmin;
+  box-shadow: 0px 0px aliceblue;
+  font-size: 900;
+}
+
+.msg {
+  display: inline-flexbox;
+  padding-top: 5%;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 42%;
+}
+
+button {
+  /* background-color: black; */
+  display: block;
+  background-color: #def4ff;
+  box-shadow: 2px 2px rgb(124, 124, 124);
+  border: 1px solid black;
+  width: 40%;
+  font-size: 3vmin;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 7px;
+  padding: 2vmin;
+}
+
+button:hover {
+  font-size: 3.5vmin;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 8vmax;
+    text-shadow: 1px 1px yellow;
+    margin-bottom: auto;
+  }
+
+  .container {
+    margin: 0 auto;
+    /* background-color: plum; */
+    width: 75%;
+    text-align: center;
+  }
+
+  img {
+    width: 35vmin;
+    height: 35vmin;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  #flexbox {
+    height: fit-content;
+  }
+
+  img:hover {
+    cursor: pointer;
+    width: 40vmin;
+    height: 40vmin;
+    box-shadow: 2px 2px 10px 10px rgb(116, 190, 255);
+    /* margin: auto; */
+  }
+
+  .nohover img:hover {
+    cursor: pointer;
+    width: 35vmin;
+    height: 35vmin;
+    box-shadow: 0px 0px 0px 0px rgb(116, 190, 255);
+  }
+
+  .nohover p {
+    font-size: 1em;
+    background-color: #def4ff;
+    z-index: 3;
+    color: black;
+    font-weight: 900;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 0px aliceblue;
+    margin: auto;
+    margin-top: 1vmin;
+  }
+
+  .msg p {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #def4ff;
+    padding: 1vmin;
+    box-shadow: 0px 0px aliceblue;
+    font-size: 900;
+    font-size: 4vmin;
+  }
+
+  .msg {
+    display: inline-flexbox;
+    padding-top: 5%;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 20vmax;
+  }
+
+  button {
+    /* background-color: black; */
+    display: block;
+    background-color: #def4ff;
+    box-shadow: 2px 2px rgb(124, 124, 124);
+    border: 1px solid black;
+    width: 100%;
+    font-size: 3vmin;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0%;
+    margin-right: 30%;
+    border-radius: 7px;
+    padding: 2vmin;
+  }
+
+  button:hover {
+    font-size: 3.5vmin;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  img {
+    width: 20vmax;
+    height: 20vmax;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  #flexbox {
+    height: fit-content;
+  }
+
+  img:hover {
+    cursor: pointer;
+    width: 25vmax;
+    height: 25vmax;
+    box-shadow: 2px 2px 10px 10px rgb(116, 190, 255);
+    /* margin: auto; */
+  }
+
+  .nohover img:hover {
+    cursor: pointer;
+    width: 17vmax;
+    height: 17vmax;
+    box-shadow: 0px 0px 0px 0px rgb(116, 190, 255);
+  }
+  .nohover img {
+    width: 17vmax;
+    height: 17vmax;
+  }
+
+  .nohover p {
+    font-size: 1em;
+    background-color: #def4ff;
+    z-index: 3;
+    color: black;
+    font-weight: 900;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 0px aliceblue;
+    margin: auto;
+    margin-top: 1vmin;
+  }
+  .msg p {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #def4ff;
+    padding: 1vmin;
+    box-shadow: 0px 0px aliceblue;
+    font-size: 900;
+    font-size: 3vmin;
+  }
+  .msg {
+    display: inline-flexbox;
+    padding-top: 5%;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 2vmin;
+    width: 20vmax;
+    /* display: none; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-box {
+    height: max-content;
+    flex-direction: row;
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+
+  .flex-box div {
+    width: 100%;
+  }
+
+  img {
+    width: 30vmax;
+    height: 30vmax;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  img:hover {
+    cursor: pointer;
+    width: 25vmax;
+    height: 25vmax;
+    box-shadow: 2px 2px 10px 10px rgb(116, 190, 255);
+    /* margin: auto; */
+  }
+
+  .nohover img:hover {
+    cursor: pointer;
+    width: 25vmax;
+    height: 25vmax;
+    box-shadow: 0px 0px 0px 0px rgb(116, 190, 255);
+  }
+  .nohover img {
+    width: 25vmax;
+    height: 25vmax;
+  }
+  .msg p {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #def4ff;
+    padding: 1vmin;
+    box-shadow: 0px 0px aliceblue;
+    font-size: 900;
+    font-size: 6vmin;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    color: orangered;
+    font-size: 7vmin;
+    text-shadow: 2px 1px yellow;
+    margin-bottom: auto;
+  }
+}
